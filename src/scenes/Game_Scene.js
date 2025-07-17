@@ -53,20 +53,20 @@ export class Game_Scene extends Phaser.Scene{
 
 
     preload(){
-        this.load.image('check_mark','/assets/images/check.png');
-         this.load.image('reset_button','/assets/images/resetButton.png');
-        this.load.image('red_x','/assets/images/redX.png');
-         this.load.image('repeat_button','/assets/images/audioButton.png');
+        this.load.image('check_mark','assets/images/check.png');
+         this.load.image('reset_button','assets/images/resetButton.png');
+        this.load.image('red_x','assets/images/redX.png');
+         this.load.image('repeat_button','assets/images/audioButton.png');
         this.load.audio('buzz', 'assets/sounds/buzz.mp3');
           this.load.audio('ding', 'assets/sounds/ding.mp3');
         for(let q = 0 ; q<this.transport.length; q++) {
-            this.load.image(this.transport[q],'/assets/images/'+ this.transport[q]+'.png');
+            this.load.image(this.transport[q],'assets/images/'+ this.transport[q]+'.png');
         }
          for(let q = 0 ; q<this.locations.length; q++) {
-            this.load.image(this.locations[q],'/assets/images/'+ this.locations[q]+'.png');
+            this.load.image(this.locations[q],'assets/images/'+ this.locations[q]+'.png');
         }
         for(let q = 0 ; q<this.people.length; q++) {
-            this.load.image(this.people[q],'/assets/images/'+ this.people[q]+'.png');
+            this.load.image(this.people[q],'assets/images/'+ this.people[q]+'.png');
         }
     }
 
